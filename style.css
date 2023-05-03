@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #3498DB;
+}
+.wrapper{
+    height: 260px;
+    background: #fff;
+    max-width: 410px;
+    border-radius: 7px;
+    padding: 16px 25px;
+    transition: height 0.2s ease;
+    
+}
+.wrapper.active{
+    height: 480px;
+}
+.wrapper.active .qrcode{
+    opacity: 1;
+    pointer-events: auto;
+    transition:opacity 0.5 0.05s ease;
+
+}
+
+
+header p{
+    font-size: 21px;
+    font-weight: bold;
+}
+.wrapper .form{
+    margin: 20px 0 30px;
+}
+.form :where(input,button){
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 50px;
+}
+.form input{
+    font-size: 18px;
+    border: 1px solid #999;
+    padding: 0 17px;
+}
+.form button{
+    
+    color: #fff;
+    background-color: #3498DB;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.wrapper .qrcode{
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 33px 0;
+    align-items: center;
+    justify-content: center;
+    /* padding-right: 0; */
+    opacity: 0; /* ghaib krne ke lye*/
+}
+/* after  js */
